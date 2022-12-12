@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 import { useState } from 'react'
 let i = 0
 import Image from 'next/image'
-import modelS from '../image/modelS.jpeg';
-import ModelSmobile from '../image/Homepage-Model-S-Mobile-LHD.jpeg'
 export default function CarContainer(props) {
 
 
@@ -19,16 +17,21 @@ export default function CarContainer(props) {
     return (
         <div
 
-            className="w-screen h-screen  flex flex-col bg-center text-center bg-cover  bg-no-repeat  items-center justify-between"
+            className="w-screen h-screen  flex flex-col bg-center text-center     items-center justify-between z-0"
         >
-            <div className="w-full h-full absolute z-2 hidden md:block">
-                <Image src={modelS} className=' absolute   h-screen w-screen  object-cover' />
+            <div className={`w-full h-full absolute z-2  md:block ${props.carName == "Model S" ? "hidden" : 'block'}`}>
+                <Image src={props.carName == "Model S" ? "/image/ModelS.jpeg" : props.carName == "Model Y" ? "/image/ModelY.jpeg" : props.carName == "Model X" ? '/image/ModelX.jpeg' : props.carName == "Model 3" ? '/image/model3.jpeg' : '/image/powershall.jpeg'}
+                    fill
+
+                    className={`absolute    ${props.carName == 'Solar et Powerwall' ? " h-auto aspect-square w-full " : 'object-cover'} `} />
             </div>
-            <div className="w-full h-full absolute z-2 md:hidden">
-                <Image src={ModelSmobile} className=' absolute   h-screen w-screen  object-cover' />
+            {props.carName == "Model S" && < div className="w-full h-full absolute z-2  md:hidden">
+                <Image width={400} height={400}
+                    src='/image/modelSMobile.jpeg' className=' absolute   h-screen w-screen  object-cover' />
             </div>
+            }
             <div className="z-30 flex flex-col justify-between h-full">
-                <div className="flex-col  text-center gap-2 self-center p-5  mt-44 md:mt-20" >
+                <div className={`flex-col text-center gap-2 self-center p-5 mt-44 md:mt-20 md:flex `} >
                     <motion.h2 transition={{ duration: 0.5 }}
                         className="text-4xl font-semi-bold md-2xl" animate={{ opacity: 1 }}
                         initial={props.isAnimate && { opacity: 0 }}>{props.carName}</motion.h2>

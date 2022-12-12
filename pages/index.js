@@ -14,19 +14,16 @@ export async function getStaticProps(context) {
 }
 export default function Home(props) {
 
- 
+
   console.log(props)
   let allElement = props.data.map(e => {
-    return <CarsLayout carName={e?.name} isAnimate={e?.animate} />
+    return <CarsLayout
+      carName={e?.name} isAnimate={e?.animate} />
   })
   return (
     <div className=''>
 
-      <div className='z-50 fixed'>
 
-        <Navbar />
-
-      </div>
       {allElement}
     </div>
   )

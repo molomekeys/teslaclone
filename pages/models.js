@@ -1,9 +1,7 @@
 import Link from "next/link";
 import BenchComponent from "../components/BenchMark";
 import Navbar from "../components/Navbar";
-import Image from 'next/image'
-import modelS from '../image/modelS.jpeg';
-import modelSInterior from '../image/MS-interior.jpeg'
+
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react';
 import SpecCards from "../components/SpecCards";
@@ -28,8 +26,8 @@ export default function ModelS(props) {
         return <SpecCards title={e.title} description={e.description} />
     });
     return (
-        <main className="flex flex-col h-max w-screen">
-            <Navbar />
+        <section className="flex flex-col h-max w-screen">
+
             <section className="w-full h-screen ">
 
 
@@ -71,6 +69,6 @@ export default function ModelS(props) {
                 {allElement}
             </motion.section>
 
-        </main>)
+        </section>)
 
 }
