@@ -47,10 +47,10 @@ export default function CarContainer(props) {
                     {props.carName == 'Solar et Powerwall' ? <div className="w-full flex justify-center ">
 
                         <button className="bg-zinc-800 py-3 px-20 rounded-md  text-sm text-slate-50 " >Plus d'info</button>
-                    </div> : <><motion.button initial={props.isAnimate && { x: -30, opacity: 0 }} transition={{ duration: 1, delay: 0.75 }} animate={{ opacity: 1, x: 0 }}
+                    </div> : <div className="flex flex-col gap-5 w-full  md:space-x-4 md:grid md:grid-cols-2 "><motion.button initial={props.isAnimate && { x: -30, opacity: 0 }} transition={{ duration: 1, delay: 0.75 }} animate={{ opacity: 1, x: 0 }}
                         className="bg-zinc-800 p-3 rounded-md  text-sm text-slate-50 ">Découvrir votre future véhicule</motion.button>
                         <motion.button initial={props.isAnimate && { opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.75 }}
-                            className="bg-slate-300 p-3 rounded-md  text-sm">Véhicules en inventaire</motion.button> </>}
+                            className="bg-slate-300 p-3 rounded-md  text-sm">Véhicules en inventaire</motion.button> </div>}
                 </motion.div>
 
             </div>
