@@ -20,7 +20,7 @@ export default function CarContainer(props) {
             className="w-screen h-screen  flex flex-col bg-center text-center     items-center justify-between z-0"
         >
             <div className={`w-full h-full absolute z-2 hidden md:block `}>
-                <Image src={props.carName == "Model S" ? "/image/ModelS.jpeg" : props.carName == "Model Y" ? "/image/ModelY.jpeg" : props.carName == "Model X" ? '/image/ModelX.jpeg' : props.carName == "Model 3" ? '/image/model3.jpeg' : '/image/powershall.jpeg'}
+                <Image src={props.carName == "Model S" ? "/image/modelS.jpeg" : props.carName == "Model Y" ? "/image/modelY.jpeg" : props.carName == "Model X" ? '/image/modelX.jpeg' : props.carName == "Model 3" ? '/image/model3.jpeg' : '/image/powershall.jpeg'}
                     fill
 
                     className={`absolute    ${props.carName == 'Solar et Powerwall' ? " h-auto aspect-square w-full " : 'object-cover'} `} />
