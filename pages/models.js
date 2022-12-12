@@ -1,7 +1,7 @@
 import Link from "next/link";
 import BenchComponent from "../components/BenchMark";
 import Navbar from "../components/Navbar";
-
+import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react';
 import SpecCards from "../components/SpecCards";
@@ -28,40 +28,42 @@ export default function ModelS(props) {
     return (
         <section className="flex flex-col h-max w-screen">
 
-            <section className="w-full h-screen ">
+            <section className="w-full h-screen relative flex flex-col items-center ">
+
+
 
 
 
                 <div className=" aboslute w-screen h-screen">
-                    <Image src={modelS} className=" object-cover " />
+                    <Image src='/image/modelS.jpeg' fill className=" object-cover " />
                 </div>
-
-                ]
-                <div className="bg-black  flex  
+                <div className="bg-transparent  flex  items-center justify-center 
                     w-screen z-20  mb-20">
 
                     <BenchComponent topSpeed={props.data.speed}
                         range={props.data.range} />
+
                 </div>
 
 
 
             </section>
 
-            <hr></hr>
+
             <section
-                className=" bg-black h-full w-full text-center align-text-center content-center z-20
+                className="relative w-screen h-screen bg-black  text-center align-text-center content-center z-20
                      text-3xl  ">
                 <motion.div ref={refForAnim}
 
                 >
+
                     <motion.h2 transition={{ delay: 2 }}
                         style={{ opacity: isInView ? 1 : 0 }}
                         className=" text-3xl self-center p-8 border-slate-900 border-5
                          h-40 shadow-xl text-white">L'intérieur du futur </motion.h2>
                 </motion.div>
-                <div>
-                    {/* <Image src={modelSInterior} className="object-cover" /> */}
+                <div className="w-full h-full absolute">
+                    <Image src='/image/MS-Interior-Hero-Desktop.jpeg' fill className="object-cover" />
                 </div>
             </section>
 
