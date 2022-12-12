@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <section>
 
         <div className='bg-dark w-screen h-screen relative'>
-          <div className='absolute z-40'>
+          <div className='fixed z-40'>
             <Navbar />
           </div>
           <Component {...pageProps} />
