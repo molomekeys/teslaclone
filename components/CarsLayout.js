@@ -27,7 +27,7 @@ export default function CarContainer(props) {
             </div>
             < div className="w-full h-full absolute z-2  md:hidden">
                 <Image fill
-                    src={props.carName == "Model S" ? "/image/ModelSMobile.jpeg" : props.carName == "Model Y" ? "/image/ModelY.jpeg" : props.carName == "Model X" ? '/image/ModelX.jpeg' : props.carName == "Model 3" ? '/image/model-3-Mobile.jpeg' : '/image/powershall.jpeg'}
+                    src={props.carName == "Model S" ? "/image/modelSMobile.jpeg" : props.carName == "Model Y" ? "/image/model-Y-Mobile.jpeg" : props.carName == "Model X" ? '/image/model-X-Mobile.jpeg' : props.carName == "Model 3" ? '/image/model-3-Mobile.jpeg' : '/image/powershall.jpeg'}
                     className=' absolute   h-screen w-screen  object-cover' />
             </div>
 
