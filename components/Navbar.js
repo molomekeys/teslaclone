@@ -12,7 +12,7 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <ol className='hidden md:flex  gap-5  z-40'>
+            <ol className='hidden xl:flex  gap-5  z-40'>
                 <Link href='/models'> <li className='hover:bg-slate-300 p-2'>  Model S  </li></Link>
 
                 <li className='hover:bg-slate-300 p-2   '>Model 3</li>
@@ -20,14 +20,14 @@ export default function Navbar() {
                 <li className='hover:bg-slate-300 p-2 ' >Powerwall</li>
             </ol>
 
-            <ol className='hidden md:flex gap-5 z-40 '>
+            <ol className='hidden xl:flex gap-5 z-40 '>
                 <li className='hover:bg-slate-300 p-2'>Boutique</li>
                 <li className='hover:bg-slate-300 p-2'>Compte</li>
                 <li className='hover:bg-slate-300 p-2'>Menu</li>
             </ol>
 
 
-            <button className='md:hidden bg-blue-100 p-2 rounded-sm'>Menu</button>
+            <button className='xl:hidden bg-blue-100 p-2 rounded-sm'>Menu</button>
         </motion.nav>
     )
 }
