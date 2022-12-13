@@ -89,9 +89,7 @@ export default function ModelS(props) {
                     {allSpec}
                 </div>
             </motion.section>
-            <video width={320} height={320} autoPlay muted loop>
-                <source src="/image/PIUCZZ_MS-Interior-Grid-2-Audio-Desktop_CLFX4X.mp4" />
-            </video>
+
         </section>
 
 
