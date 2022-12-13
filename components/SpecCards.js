@@ -8,10 +8,13 @@ export default function SpecCards(props) {
         <motion.div initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: -30 }} transition={{ duration: 2 }}
 
             className=' flex flex-col  md:grid md:grid-cols-2 z-50 bg-transparent  gap-6 md:gap-20 '>
-            <motion.div className='  w-full h-full  ' >
+            {props.title == "Son immersif" ? <motion.div>
+                <video width={320} height={320} autoPlay muted loop className='w-full h-full'>
+                    <source src="/image/PIUCZZ_MS-Interior-Grid-2-Audio-Desktop_CLFX4X.mp4" />
+                </video>  </motion.div> : <motion.div className='  w-full h-full  ' >
                 <Image src={props.imgSrc}
                     width={1000} height={800} className='object-cover z-50 rounded-lg translate-z-10' />
-            </motion.div>
+            </motion.div>}
 
             <div className='  flex flex-col gap-4   px-10 '>
                 <h3 className='text-slate-300 font-semibold text-md md:text-lg'>

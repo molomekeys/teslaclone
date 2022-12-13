@@ -48,8 +48,11 @@ export default function ModelS(props) {
 
 
 
-                <div className=" aboslute w-screen h-screen">
+                <div className=" aboslute md:block w-screen h-screen">
                     <Image src='/image/Model-S-Main.jpeg' fill className=" object-cover " />
+                </div>
+                <div className=" aboslute md:hidden w-screen h-screen">
+                    <Image src='/image/Model-S-Main-Hero-Mobile-LHD.jpeg' fill className=" object-cover " />
                 </div>
                 <div className="bg-transparent  flex  items-center justify-center 
                     w-screen z-20  mb-20">
@@ -86,6 +89,9 @@ export default function ModelS(props) {
                     {allSpec}
                 </div>
             </motion.section>
+            <video width={320} height={320} autoPlay muted loop>
+                <source src="/image/PIUCZZ_MS-Interior-Grid-2-Audio-Desktop_CLFX4X.mp4" />
+            </video>
         </section>
 
 
