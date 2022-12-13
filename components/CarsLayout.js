@@ -56,7 +56,7 @@ export default function CarContainer(props) {
             </div>
             {
                 props.isAnimate && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 0.5 }}>
-                    <UilAngleDoubleDown size='50px' className="my-2 self-center z-20 animate-bounce mt-10 mb-20" />
+                    <UilAngleDoubleDown size='50px' className="my-2 self-center z-20 animate-bounce  mb-20" />
                 </motion.div>
             }
         </div >

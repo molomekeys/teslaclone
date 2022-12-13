@@ -17,7 +17,7 @@ let dataSpec = [{
 },
 {
     title: "De la place pour tout",
-    imgSrc: "/image/MS-Interior-Grid-A-Desktop.jpeg",
+    imgSrc: "/image/MS-Interior-Grid-D-Desktop.jpeg",
     description: "Avec des coffres avant et arrière et des sièges rabattables à plat, la Model S est une voiture de luxe assez spacieuse pour y entrer votre vélo sans enlever de roue, et vos bagages aussi."
 }]
 export async function getStaticProps(context) {
