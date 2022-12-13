@@ -19,7 +19,7 @@ export default function MenuDrawer() {
 
     return (
         <>
-            <Button ref={btnRef} colorScheme='blackAlpha50' onClick={onOpen}>
+            <Button ref={btnRef} colorScheme='blackAlpha100' className='hover:bg-slate-200 hover:text-black' onClick={onOpen}>
                 Menu
             </Button>
             <Drawer

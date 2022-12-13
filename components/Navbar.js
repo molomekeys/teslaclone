@@ -28,7 +28,7 @@ export default function Navbar() {
             </ol>
 
 
-            <div className='xl:hidden hover:bg-blue-50 p-2 rounded-sm hover:text-slate-500'>
+            <div className='xl:hidden  p-2 rounded-sm'>
 
                 <MenuDrawer />
             </div>
