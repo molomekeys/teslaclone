@@ -21,7 +21,7 @@ export default function Home(props) {
       carName={e?.name} isAnimate={e?.animate} />
   })
   return (
-    <div className='bg-dark'>
+    <div className=''>
 
 
       {allElement}

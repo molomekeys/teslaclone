@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion'
 import Link from 'next/link';
+import MenuDrawer from './MenuDrawer';
 export default function Navbar() {
     return (
         <motion.nav animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, }}
@@ -27,7 +28,11 @@ export default function Navbar() {
             </ol>
 
 
-            <button className='xl:hidden bg-blue-100 p-2 rounded-sm'>Menu</button>
+            <div className='xl:hidden hover:bg-blue-50 p-2 rounded-sm hover:text-slate-500'>
+
+                <MenuDrawer />
+            </div>
+
         </motion.nav>
     )
 }
