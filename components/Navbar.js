@@ -15,9 +15,8 @@ export default function Navbar() {
             <ol className='hidden md:flex  gap-5  z-40'>
                 <Link href='/models'> <li className='hover:bg-slate-300 p-2'>  Model S  </li></Link>
 
-                <li className='hover:bg-slate-300 p-2   '>Model Y</li>
-                <li className='hover:bg-slate-300 p-2 ' >Model X</li>
-                <li className='hover:bg-slate-300 p-2 ' >Cybertruck</li>
+                <li className='hover:bg-slate-300 p-2   '>Model 3</li>
+                <li className='hover:bg-slate-300 p-2 ' >Model Y</li>
                 <li className='hover:bg-slate-300 p-2 ' >Powerwall</li>
             </ol>
 
