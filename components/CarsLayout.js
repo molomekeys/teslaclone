@@ -34,7 +34,7 @@ export default function CarContainer(props) {
             <div className="z-30 flex flex-col justify-between h-full">
                 <div className={`flex-col text-center gap-2 self-center p-5 mt-44 md:mt-20 md:flex `} >
                     <motion.h2 transition={{ duration: 0.5 }}
-                        className="text-4xl font-semi-bold md-2xl" animate={{ opacity: 1 }}
+                        className="text-4xl font-bold md-2xl" animate={{ opacity: 1 }}
                         initial={props.isAnimate && { opacity: 0 }}>{props.carName}</motion.h2>
                     <motion.small animate={{ opacity: 1 }} initial={props.isAnimate && { opacity: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
